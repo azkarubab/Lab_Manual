@@ -1,0 +1,84 @@
+/* (a) Element Selector */
+h1, h2 {
+    color: navy;
+}
+p {
+    color: darkslategray;
+}
+
+/* (b) Class Selector */
+.highlight {
+    background-color: yellow;
+    font-style: italic;
+}
+
+/* (c) ID Selector */
+#main-title {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+/* (d) Grouping Selector */
+h2, p, li {
+    border: 1px solid lightgray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* (e) Descendant Selector */
+div p {
+    color: darkgreen;
+    background-color: #e8f5e9;
+}
+
+/* (f) Child Selector */
+div > ul > li {
+    color: purple;
+}
+
+/* (g) Attribute Selector */
+input[type="text"] {
+    border: 2px solid blue;
+    padding: 5px;
+}
+input[type="password"] {
+    border: 2px solid red;
+    padding: 5px;
+}
+input[type="submit"] {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+/* (h) Pseudo-classes */
+a:hover {
+    color: crimson;
+    font-weight: bold;
+}
+ul li:first-child {
+    font-weight: bold;
+}
+ul li:last-child {
+    font-style: italic;
+}
+
+/* (i) Pseudo-elements */
+h1::before {
+    content: "★ ";
+    color: gold;
+}
+h1::after {
+    content: " ★";
+    color: gold;
+}
+p::first-letter {
+    font-size: 24px;
+    color: green;
+}
+
+/* Image Styling */
+img {
+    border: 3px solid black;
+    width: 200px;
+    border-radius: 10px;
+}
